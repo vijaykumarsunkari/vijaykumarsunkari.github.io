@@ -18,6 +18,11 @@
         <a href="">
                 <img src="sarang.jpg" alt="logo">
         </a>
+        <button id="submenu" onclick="showMenu(event)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         
 
@@ -186,6 +191,22 @@
 
 
 </footer>
+    <script>
+
+    function showMenu(event){
+
+        event.preventDefault();
+
+        let element = document.getElementById('header');
+
+        if(element.classList.contains('active')){
+            element.className = "";
+        } else {
+            element.className = "active";
+        }
+
+
+    }
 
 
 </script>
